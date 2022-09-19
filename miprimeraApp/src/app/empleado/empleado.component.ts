@@ -9,6 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpleadoComponent implements OnInit {
 
+  nombre="Juan";
+  apellido="Alonso";
+  edad=5;
+  empresa="Emser";
+
+  /*getEdad(){
+    return this.edad;
+  }*/
+
   constructor() { }
 
   ngOnInit(): void {
