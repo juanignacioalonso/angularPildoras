@@ -21,6 +21,16 @@ export class EmpleadoComponent implements OnInit {
   /*llamaEmpresa(value:String){
 
   }*/
+  
+  /*Propiedades Binding */
+
+  habilitacioncuadro=true;
+
+  usoRegistrado=false;
+
+  getRegistroUsuario(){
+    this.usoRegistrado=false;
+  }
 
   constructor() { }
 
