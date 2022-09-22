@@ -7,7 +7,10 @@ Introduce la empresa: <input type="text" #empresa (keyup)="0" [disabled]="habili
 <br/>
 <br/>
 <!--input type="button" value="Confirme" (click)="llamaEmpresa(empresa.value)"--> <!-- evento (desencadenante de la acción) el boton desencadenara un evento -->
-
-Registrado: <input type="checkbox"  id="registro" [checked]="usoRegistrado ">
+{{textoDeRegistro}}
+<br/>
+<br/>
+Registrado: <input type="radio" value="si" name="nRegistro"  id="registro" [checked]="usoRegistrado "(click)="setUsuarioRegistrado($event)"><!--$event de esta maneta capturamos el evento para poder usarlo como un objeto en el metodo-->
+No Registrado: <input type="radio" value="no" name="nRegistro" (click)="setUsuarioRegistrado($event)" >
 
 {{getRegistroUsuario()}}
