@@ -12,7 +12,9 @@ export class EmpleadoComponent implements OnInit {
   nombre="Juan";
   apellido="Alonso";
   edad=5;
-  //empresa="Emser";
+  empresa="google";
+
+  
 
   /*getEdad(){
     return this.edad;
@@ -24,7 +26,7 @@ export class EmpleadoComponent implements OnInit {
   
   /*Propiedades Binding */
 
-  habilitacioncuadro=true;
+  habilitacioncuadro=false;
 
   usoRegistrado=false;
 
