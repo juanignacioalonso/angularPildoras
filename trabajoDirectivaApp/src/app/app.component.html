@@ -6,4 +6,15 @@
 
 </form>
 <br>
-<p *ngIf="registrado">{{mensaje}} con el nombre de {{nombre}}  {{apellido}}</p>
+<p *ngIf="registrado; else sinRegistrar">{{mensaje}} con el nombre de {{nombre}}  {{apellido}}</p><!--Forma completa de usar el condicional con el ng-template -->
+<ng-template #sinRegistrar>
+  <p>Nadie Reregistrado</p>
+</ng-template>
+
+<br><br>
+
+<ul>
+  <li *ngFor="let entrada of entradas; let i=index"><span style="font-size:larger;font-weight:bold">  {{entrada.titulo}}</span>
+  . Entrada {{i}}
+  </li><!--Forma de usar el ngFor-->
+</ul>
